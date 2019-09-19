@@ -1,0 +1,1300 @@
+/* ********** */
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {font-size: 100%;font-family: 'Montserrat'}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.content-wrapper {
+	width: 100%;
+	max-width: 1170px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
+
+/* ********** */
+
+/* header */
+
+
+header {
+	width: 100%;
+	height: 65px;
+	background: #8d1524;
+	-webkit-transition: 1.4s ease;
+	-o-transition: 1.4s ease;
+	transition: 1.4s ease;
+}
+
+header.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.logo {
+	float: left;
+	padding-top: 23px;
+	padding-bottom: 5px;
+	font-family: "ProximaNovaBold";
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	text-decoration: none;
+}
+
+.top-header {
+	position: relative;
+}
+
+.top-menu {
+	position: relative;
+	float: left;
+	padding-top: 23px;
+	padding-left: 41px;
+	z-index: 99;
+}
+
+.top-menu li {
+	display: inline-block;
+	padding-right: 42px;
+}
+
+.top-menu li:last-child {
+	padding-right: 0;
+}
+
+.top-menu a {
+	font-family: "ProximaNovaBold";
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: .1s ease;
+	-o-transition: .1s ease;
+	transition: .1s ease;
+}
+
+.top-menu a:hover {
+	padding-bottom: 1px;
+	border-bottom: 2px solid #fff;
+}
+
+.top-menu a:focus {
+	border-bottom: 2px solid #fff;
+}
+
+.right-block {
+	float: right;
+	padding-top: 12px;
+}
+
+.right-block a {
+	padding: 10px 27px;
+	display: inline-block;
+	margin-right: 7px;
+	font-family: "ProximaNovaBold";
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+	-webkit-transition: .4s ease-out;
+	-o-transition: .4s ease-out;
+	transition: .4s ease-out;
+}
+
+.right-block a:hover {
+	background: #fff;
+	color: #8d1524;
+}
+
+.knop {
+	display: none;
+	float: right;
+	height: 65px;
+	padding: 23px 15px;
+	font-family: "ProximaNovaBold";
+	color: #fff;
+	cursor: pointer;
+}
+
+.knop:hover {
+	background: #650b16;
+}
+
+.right-menu .sign_in:before {
+	content: '\f2c0';
+	font-family: 'FontAwesome';
+	display: block;
+	color: #fff;
+	float: left;
+	padding-right: 10px;
+}
+
+.right-menu .reg:before {
+	content: '\f2bb';
+	font-family: 'FontAwesome';
+	display: block;
+	color: #fff;
+	float: left;
+	padding-right: 10px;
+}
+
+.right-menu {
+	width: 176px;
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    background: #650b16;
+    z-index: 100;
+}
+
+.toggle-menu {
+	width: 35px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.toggle-menu span {
+	display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    right: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.toggle-menu span:nth-child(1) {
+	top: 0;
+}
+
+.toggle-menu span:nth-child(2), .toggle-menu span:nth-child(3) {
+    top: 10px;
+}
+
+.toggle-menu span:nth-child(4) {
+    top: 20px;
+}
+
+.menu_state_open .toggle-menu span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu_state_open .toggle-menu span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.menu_state_open .toggle-menu span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.menu_state_open .toggle-menu span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.knop:after {
+	content: '\f0d7';
+	font-family: 'FontAwesome';
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}
+
+.right-menu a {
+	 padding: 15px;
+	display: block;
+	font-family: "ProximaNovaBold";
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: .4s ease-out;
+	-o-transition: .4s ease-out;
+	transition: .4s ease-out;
+}
+
+.right-menu a:hover {
+	background: #8d1524;
+}
+
+/* header */
+
+/* main */
+
+.header-info {
+	width: 100%;
+	text-align: center;
+	background: url(../images/header-bg.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.one-block__top img {
+	padding: 25px 0;
+}
+
+.one-block__top h3 {
+	font-family: "ProximaNovaBold";
+	font-size: 40px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.one-block__top h3:after {
+	content: '';
+	display: block;
+	width: 125px;
+	height: 2px;
+	margin: 15px auto 0 auto;
+	background-color: #8d1524;
+}
+
+.one-block__top  p {
+	width: 50%;
+	display: block;
+	margin: 15px auto 0 auto;
+	font-size: 24px;
+	font-family: "ProximaNovaLight";
+}
+
+.one-block__reg {
+	margin-top: 15px;
+}
+
+.one-block__reg a {
+	padding: 13px 34px;
+	display: inline-block;
+	margin-right: 7px;
+	font-family: "ProximaNovaBold";
+	font-size: 18px;
+	color: #8d1524;
+	text-decoration: none;
+	border: 2px solid #8d1524;
+	-webkit-transition: .4s ease-out;
+	-o-transition: .4s ease-out;
+	transition: .4s ease-out;
+}
+
+.one-block__reg a:hover {
+	background: #8d1524;
+	color: #fff;
+}
+
+.one-block__bottom {
+	width: 100%;
+	height: 858px;
+	margin-top: 20px;
+	background: url(../images/bottom-png.png);
+}
+
+.one-block__wrapper {
+	width: 100%;
+	float: left;
+	padding: 450px 0 0 0;
+}
+
+.one-block__info {
+	width: 55%;
+	float: left;
+	padding-left: 110px;
+	text-align: left;
+}
+
+.one-block__info h3 {
+	padding-bottom: 5px;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.one-block__info h3:after {
+	content: '';
+	display: block;
+	width: 105px;
+	height: 2px;
+	position: relative;
+	top: 5px;
+	background-color: #fff;
+}
+
+.one-block__info h4 {
+	padding-top: 45px;
+	font-family: "ProximaNovaBold";
+	font-size: 22px;
+	color: #fff;
+}
+
+.one-block__info p {
+	width: 70%;
+	padding-top: 10px;
+	font-size: 21px;
+	font-family: "ProximaNovaRegular";
+	color: #fff;
+	line-height: 24px;
+}
+
+.one-block__form input[type="text"]:before {
+	content: '\f007';
+	font-family: 'FontAwesome';
+	display: block;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: -5px;
+	color: #fff;
+}
+
+.one-block__form {
+	width: 80%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.one-block__form input[type="text"], .one-block__form input[type="password"]{
+	width: 47%;
+	height: 40px;
+	margin-top: 15px;
+	margin-right: 10px;
+	padding-left: 10px;
+	background: transparent;
+	color: #fff;
+	font-family: "ProximaNovaRegular";
+	font-size: 14px;
+	box-shadow: 0 0 0 1px #fff;
+	border: 0;
+	outline: 0;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.one-block__form input[type="password"] {
+	margin-right: 0;
+}
+
+.one-block__form input[type="submit"] {
+	width: 185px;
+	height: 40px;
+	display: block;
+	margin: 12px auto 0 auto;
+	font-family: "ProximaNovaBold";
+	font-size: 18px;
+	background: #fff;
+	color: #6a101b;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.one-block__form input[type="submit"]:hover {
+	opacity: .9;
+}
+
+.one-block__form .save-me {
+	margin-top: 10px;
+	color: #dfd2d3;
+	text-decoration: none;
+	font-family: "ProximaNovaLight";
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.one-block__form .reset-password {
+	float: right;
+	margin-top: 10px;
+	color: #dfd2d3;
+	text-decoration: none;
+	font-family: "ProximaNovaLight";
+	font-size: 12px;
+}
+
+input[type="checkbox"]+span,input[type="radio"]+span{
+	-webkit-appearance:none;
+	width:16px;
+	height:16px;
+	margin-top: 10px;
+	background: #fff;
+	border:1px solid rgba(255,255,255,1);
+	outline:none;
+	box-sizing:border-box;
+	display:inline-block;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked+span:before{
+	content: "";
+    display: block;
+    width: 4px;
+    height: 9px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 0 solid rgb(108, 16, 28);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotateZ(44deg);
+    margin: 0px 4px;
+	pointer-events:none;
+}
+
+.one-block__video {
+	float: right;
+	width: 45%;
+	height: 300px;
+}
+
+.history-company {
+	width: 100%;
+	padding: 50px 0 90px 0;
+	background: url(..//images/header-bg.png) no-repeat;
+	background-size: cover;
+}
+
+.history-company h3 {
+	padding-bottom: 39px;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+}
+
+.history-company h3:after {
+	content: '';
+    display: block;
+    width: 105px;
+    height: 2px;
+    margin: 15px auto 0 auto;
+    background-color: #8d1524;
+}
+
+.history-company p {
+	width: 100%;
+	font-family: "ProximaNovaRegular";
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	display: block;
+	margin-top: 15px;
+	background-color: #8d1524;
+}
+
+.history-company i {
+	float: right;
+	margin-top: 10px;
+	font-size: 50px;
+	color: #8d1524;
+}
+
+.achievements {
+	width: 100%;
+	padding: 44px 0 60px 0;
+	background: url(..//images/achievements.png) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.achievements h3 {
+	padding-bottom: 25px;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.achievements h3:after {
+	content: '';
+    display: block;
+    width: 105px;
+    height: 3px;
+    margin: 15px auto 0 auto;
+    background-color: #fff;
+}
+
+.achievements p {
+	font-family: "ProximaNovaRegular";
+	font-size: 16px;
+	color: #fff;
+	line-height: 24px;
+}
+
+.achievements i {
+	float: right;
+	margin-top: 10px;
+	font-size: 50px;
+	color: #fff;
+}
+
+.line2 {
+	width: 100%;
+	height: 2px;
+	display: block;
+	margin-top: 15px;
+	background-color: #fff;
+}
+
+.join {
+	width: 203px;
+	height: 45px;
+	display: block;
+	margin: 46px auto 0 auto;
+	text-align: center;
+	border: 2px solid #fff;
+	color: #fff;
+	line-height: 40px;
+	text-decoration: none;
+	font-family: "ProximaNovaBold";
+	font-size: 16px;
+	-webkit-transition: .4s ease;
+	-o-transition: .4s ease;
+	transition: .4s ease;
+}
+
+.join:hover {
+	background: #fff;
+	color: #8d1524;
+}
+
+.advantages {
+	width: 100%;
+	padding: 64px 0;
+	background: url(..//images/header-bg.png);
+}
+
+.advantages h3 {
+	padding-bottom: 65px;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+}
+
+.advantages-block-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.advantages-block {
+	width: 25%;
+	text-align: center;
+}
+
+.advantages-block img {
+
+}
+
+.advantages-block h4 {
+	padding: 20px 0 15px 0;
+	font-family: "ProximaNovaBold";
+	font-size: 18px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.advantages-block p {
+	width: 80%;
+	margin: auto;
+	font-family: "ProximaNovaRegular";
+	font-size: 14px;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.marketing {
+	padding: 34px 0 53px 0;
+	width: 100%;
+	background: url(..//images/marketing.png) no-repeat;
+	background-size: cover;
+}
+
+.marketing h3 {
+	padding-bottom: 21px;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.marketing-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+	text-align: center;
+}
+
+.marketing-block {
+	margin-right: 5px;
+	background: #fff;
+}
+
+.marketing-block .marketing-block__crypt {
+	height: 62px;
+	font-family: "ProximaNovaBold";
+	font-size: 18px;
+	color: #fff;
+	line-height: 62px;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	text-align: center;
+	background: url(..//images/marketing1.png);
+}
+
+.marketing-block .marketing-block__fond {
+	height: 62px;
+	font-family: "ProximaNovaBold";
+	font-size: 18px;
+	color: #fff;
+	line-height: 62px;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	text-align: center;
+	background: url(..//images/marketing2.png);
+}
+
+.marketing-block__section {
+	width: 32%;
+	padding: 7px;
+	display: inline-block;
+	text-align: center;
+	border-right: 1px solid #ddd;
+}
+
+.marketing-block__section:last-child {
+	border-right: 0;
+}
+
+.marketing-block__info {
+	padding: 1px;
+	text-align: left;
+	line-height: 24px;
+}
+
+.marketing-block__section span {
+	width: 100%;
+	font-family: "ProximaNovaRegular";
+	font-size: 14px;	
+}
+
+.marketing-block__section .info-details {
+	font-family: "ProximaNovaBold";
+	color: #8c1524;
+}
+
+.marketing-block__section .info-details-w {
+	color: #fff;
+}
+
+.marketing-block__section .set-pan {
+	margin-top: 19px;
+	padding: 9px 21px;
+	display: block;
+	font-family: "ProximaNovaBold";
+	font-size: 16px;
+	text-decoration: none;
+	color: #000;
+	border: 2px solid #8d1524;
+	-webkit-transition: .4s ease;
+	-o-transition: .4s ease;
+	transition: .4s ease;
+}
+
+.marketing-block__section .set-pan:hover {
+	background: #8d1524;
+	color: #fff;
+}
+
+.marketing-title-calc {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.marketing-title-desc {
+	font-family: "ProximaNovaRegular";
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+.marketing-calc {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.marketing-calc input {
+	width: 230px;
+	height: 35px;
+	margin-right: 11px;
+	padding-left: 10px;
+	background: transparent;
+	border: 1px solid #fff;
+	position: relative;
+}
+
+.marketing-calc-tarif:after {
+	content: '\f105';
+	font-family: 'FontAwesome';
+	display: block;
+	position: absolute;
+	font-size: 14px;
+	color: #fff;
+}
+
+.index {
+	width: 100%;
+	height: 120px;
+	background: #fff;
+}
+
+.affiliate {
+	width: 100%;
+	padding: 25px 0 36px 0;
+	background: url(..//images/afiliate.png) no-repeat;
+	background-size: cover;
+	background-position: 50% 0;
+}
+
+.affiliate h3 {
+	padding-bottom: 45px;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.affiliate-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.affiliate-wrap {
+	margin-right: 20px;
+	text-align: center;
+}
+
+.affiliate-wrap h5 {
+	padding: 10px;
+	font-family: "ProximaNovaBold";
+	font-size: 18px;
+	color: #fff;
+}
+
+.affiliate-block-case {
+	width: 425px;
+	height: 127px;
+	padding: 20px;
+	margin: auto;
+	color: #fff;
+	font-family: "ProximaNovaBold";
+	text-align: left;
+	line-height: 24px;
+	background: url(..//images/affiliate.png) no-repeat;
+	border: 2px solid #fff;
+}
+
+.affiliate-block-crown {
+	width: 425px;
+	height: 127px;
+	padding: 20px;
+	margin: auto;
+	color: #fff;
+	font-family: "ProximaNovaBold";
+	text-align: left;
+	line-height: 24px;
+	background: url(..//images/affiliate.png) no-repeat;
+	border: 2px solid #fff;
+}
+
+.affiliate-join {
+	width: 220px;
+	height: 50px;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	line-height: 45px;
+	text-align: center;
+	font-family: "ProximaNovaBold";
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #fff;
+	-webkit-transition: .4s ease;
+	-o-transition: .4s ease;
+	transition: .4s ease;
+}
+
+.affiliate-join:hover {
+	background: #fff;
+	color: #7a121f;
+}
+
+.deposit {
+	width: 100%;
+	padding: 38px 0 25px 0;
+	background: url(..//images/header-bg.png) no-repeat;
+	background-size: cover;
+}
+
+.deposit-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.deposit-block {
+	width: 30%;
+	margin-right: 50px;
+}
+
+.deposit-block h4 {
+	font-family: "ProximaNovaBold";
+	font-size: 18px;
+	color: #000;
+}
+
+.deposit-block ul {
+	margin-top: 20px;
+}
+
+
+.deposit-block li {
+	height: 33px;
+    border: 2px solid #8d1524;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+.deposit-block .deposit-block-title {
+	float: left;
+    padding: 5px 0 0 20px;
+    font-family: "ProximaNovaRegular";
+}
+
+.deposit-block .deposit-block-price {
+	width: 100px;
+    height: 29px;
+    float: left;
+    line-height: 29px;
+    background: #8d1524;
+    color: #fff;
+    position: relative;
+    font-family: "ProximaNovaBold";
+    text-align: center;
+}
+
+.deposit-block .deposit-block-price-right {
+	width: 100px;
+    height: 29px;
+    float: left;
+    line-height: 29px;
+    background: #8d1524;
+    color: #fff;
+    position: relative;
+    font-family: "ProximaNovaBold";
+    text-align: center;
+}
+
+.deposit-block .deposit-block-price:after {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 16px 14px 15px;
+	border-color: transparent #fff transparent transparent;
+}
+
+.deposit-block .deposit-block-price-right:after {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	margin-left: 30px;
+	border-style: solid;
+	border-width: 14px 20px 15px 13px;
+	border-color: transparent transparent transparent #8d1524;
+}
+
+.deposit-block img {
+	float: left;
+    margin-top: 4px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.deposit h5 {
+	font-family: "ProximaNovaBold";
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+	line-height: 25px;
+}
+
+.sertificats {
+	width: 100%;
+	padding: 35px 0 48px 0;
+	background: url(..//images/sertificates.png) no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.sertificats h3 {
+	padding-bottom: 45px;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.sertificats img {
+	width: 30%;
+	height: 400px;
+	display: inline-block;
+	background: #fff;
+	margin-right: 10px;
+	border: 1px solid #fff;
+}
+
+.payment {
+	width: 100%;
+	float: left;
+	padding: 36px 0 60px 0;
+	background: url(..//images/header-bg.png) no-repeat;
+	background-size: cover;
+}
+
+.item {
+	padding: 0 40px;
+	/* width: 25%; */
+	float: left;
+}
+
+.payment h3 {
+	padding-bottom: 30px;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+}
+
+.payment-wrapper {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	justify-content: center;
+}
+
+.payment-block {
+	width: 100%;
+	margin: auto;
+	float: left;
+	padding: 20px 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.payment-block img {
+	max-width: 100%;
+	display: inline-block;
+	height: auto;
+	/* padding: 40px; */
+}
+
+/* main */
+
+/* footer */
+
+.footer {
+	width: 100%;
+	float: left;
+	background: #333333;
+}
+
+.footer-bg {
+	width: 100%;
+	float: left;
+	background: linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,0));
+}
+
+.footer__logo {
+	float: left;
+}
+
+.footer__col-wrapper {
+	width: 100%;
+	float: left;
+	margin: auto;
+	padding: 40px;
+}
+
+.footer__col {
+	width: 33%;
+	float: left;
+	padding-left: 90px;
+}
+
+.footer__col:nth-child(3) {
+	width: 50%;
+}
+
+.footer__col li {
+	display: block;
+	padding-bottom: 20px;
+}
+
+.footer__col a {
+	font-family: "ProximaNovaSemiBold";
+	font-size: 16px;
+	color: #fff;
+	border-bottom: 1px solid #787878;
+	text-decoration: none;
+	line-height: 24px;
+}
+
+.footer__col a:hover {
+	border-bottom: none;
+}
+
+.footer-bottom {
+	width: 100%;
+	float: left;
+	padding: 27px 0 42px 0;
+	border-top: 1px solid #fff;
+}
+
+.footer-bottom p {
+	color: #fff;
+	font-family: "ProximaNovaRegular";
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/* footer */
+
+/* faq */
+
+.questions {
+	width: 100%;
+	height: 100vh;
+	background: url(..//images/header-bg.png) no-repeat;
+	background-size: cover;
+}
+
+.questions .faq-logo {
+	display: block;
+	padding: 24px 0;
+	text-align: center;
+}
+
+.questions-title {
+	width: 100%;
+	height: 63px;
+	background: #8d1524;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "ProximaNovaBold";
+	text-align: center;
+	line-height: 63px;
+	font-size: 25px;
+}
+
+.questions-menu {
+	float: left;
+	width: 25%;
+	margin-top: 20px;
+}
+
+.questions-menu li {
+	display: block;
+	padding: 10px 0;
+}
+
+.questions-menu a {
+	font-family: "ProximaNovaRegular";
+	color: #000;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.questions-content {
+	width: 75%;
+	height: 100vh;
+	float: left;
+	margin: 20px 0;
+}
+
+.questions-content h3 {
+	font-family: "ProximaNovaBold";
+	color: #000;
+	font-size: 24px;
+}
+
+.question-block {
+	width: 100%;
+	height: 50px;
+	margin-top: 15px;
+	background: #8d1524;
+	line-height: 50px;
+}
+
+.question-block a {
+	font-family: "ProximaNovaBold";
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.question-block i {
+	padding: 10px 20px;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.answer-block {
+	padding: 20px 50px;
+	background: #fff;
+	font-family: "ProximaNovaRegular";
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/* faq */
+
+
+/* form */
+
+.form-popup {
+    position: absolute;
+    padding: 25px 19px 19px;
+    background-color: #8d1524;
+    width: 36%;
+    right: 50px;
+    top: 30px;
+    color: #fff;
+    opacity: .9;
+}
+
+.form-popup>span {
+    font-family: ProximaNova Semibold;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.form-popup form {
+    border: 1px solid #fff;
+    padding: 48px 34px 30px;
+}
+
+.flex-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -webkit-align-content: flex-start;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+.form-popup span {
+    font-family: "ProximaNovaRegular";
+}
+
+.form-popup a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "ProximaNovaRegular";
+}
+
+.form-popup input[type=password], .form-popup input[type=text] {
+    margin-bottom: 20px;
+    background: #fff;
+    outline: 0;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.form-popup button {
+    color: #fff;
+    font-family: ProximaNova Bold;
+    outline: 0;
+    border: none;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 18px 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "ProximaNovaRegular";
+    -webkit-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+}
+
+.form-popup button:hover {
+	background-color: #fff;
+	color: #8d1524;
+}
+
+/* form */
